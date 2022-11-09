@@ -121,11 +121,26 @@
 /*main*/
 
 /*hero*/
+
 .hero{
     background-color: #2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+/* overlay */
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), 
+        url('../images/bcgpicture.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
 }
 .hero-title{
     margin-top: 0;
