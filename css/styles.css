@@ -213,15 +213,19 @@ margin-right: 30px;
 }
 .icon-antenna::before{
     background-image: url(../images/antenna\ 1.svg);
+    background-size: 70px;
 }
 .icon-clock::before{
     background-image: url(../images/clock\ 1.svg);
+    background-size: 70px;
 }
 .icon-diagram::before{
     background-image: url(../images/diagram\ 1.svg);
+    background-size: 70px;
 }
 .icon-astronaut::before{
-    background-image:url(../images/astronaut\ 1.svg)
+    background-image:url(../images/astronaut\ 1.svg);
+    background-size: 70px;
 }
 .list-item .text {
     margin-top: 0;
@@ -317,7 +321,7 @@ margin-right: 30px;
 .color-footer:focus {
     color: var(--accent-color);
 }
-.list .email{
+.list-email{
     margin-bottom: 9px;
 }
 .email,
