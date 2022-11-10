@@ -202,31 +202,19 @@ margin-right: 30px;
 .feature-list .list-item:nth-child(4){
     margin-right: 0;
 }
-.list-item::before{
-    display: block;
-    content: '';
+.icon {
+    width: 270px;
     height: 120px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
     background-color: #F5F4FA;
-    background-position: center;
+    margin-bottom: 30px;
 }
-.icon-antenna::before{
-    background-image: url(../images/antenna\ 1.svg);
-    background-size: 70px;
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut{
+    margin: 25px 100px;
 }
-.icon-clock::before{
-    background-image: url(../images/clock\ 1.svg);
-    background-size: 70px;
-}
-.icon-diagram::before{
-    background-image: url(../images/diagram\ 1.svg);
-    background-size: 70px;
-}
-.icon-astronaut::before{
-    background-image:url(../images/astronaut\ 1.svg);
-    background-size: 70px;
-}
+
 .list-item .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -297,7 +285,21 @@ margin-right: 30px;
 .description{
     padding-top: 30px;
     padding-bottom: 30px;
+   
 }
+.icon-list{
+    display: flex;
+    justify-content: center;
+}
+.icon-item{
+    width: 44px;
+    height:44px;
+    margin-right: 10px;
+}
+.icon-item:nth-child(4){
+    margin-right: 0;
+}
+  
 /*footer*/
 .end-page{
     padding-top: 60px;
