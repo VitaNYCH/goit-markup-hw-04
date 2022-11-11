@@ -203,16 +203,13 @@ margin-right: 30px;
     margin-right: 0;
 }
 .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-}
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut{
-    margin: 25px 100px;
 }
 
 .list-item .text {
@@ -292,14 +289,43 @@ margin-right: 30px;
     justify-content: center;
 }
 .icon-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height:44px;
+    border-radius: 50% 50%;
     margin-right: 10px;
 }
 .icon-item:nth-child(4){
     margin-right: 0;
 }
-  
+.icon-item:hover{
+   background-color: #2196F3;
+}
+.icon-instagram:hover,
+.icon-twitter:hover,
+.icon-facebook:hover,
+.icon-linkedin:hover {
+   fill: #fff;
+} 
+/* client list */
+.client-list{
+    display: flex;
+    justify-content: center;
+}
+.client{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client:nth-child(6){
+    margin-right: 0;
+}
 /*footer*/
 .end-page{
     padding-top: 60px;
