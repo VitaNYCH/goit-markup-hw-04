@@ -116,12 +116,18 @@
     margin-left: 50px;
 }
 .contacts .contact-item {
-    color: var(--secondary-text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height:1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    color: var(--secondary-text-color);
+    
+
 }
 .contact-item:hover,
 .contact-item:focus{
@@ -133,12 +139,14 @@
     color:var(--accent-color);
     cursor: pointer;
 } 
-.contact-items{
+.item.contact-items{
     display: flex;
-    color:#757575;
+    color:#757575; 
 }
-.contact-icons{
-    fill:currentColor;
+
+.envelope,
+.smartphone{
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -151,6 +159,7 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0;
 }
 /* overlay */
 .overlay {
@@ -224,6 +233,7 @@ margin-right: 30px;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    border-radius: 4px
 }
 
 .list-item .text {
@@ -304,12 +314,16 @@ margin-right: 30px;
 }
 .icon-element{
     display: flex;
-    padding: 12px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    color:#AFB1B8
-    
+    color:#AFB1B8; 
 }
-.icon-element:hover{
+
+.icon-element:hover,
+.icon-element:focus{
     color:#fff;
     background-color: #2196F3;
     cursor: pointer;
@@ -319,7 +333,6 @@ margin-right: 30px;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 27px;
 }
 
 .icon-instagram,
@@ -334,17 +347,20 @@ margin-right: 30px;
     display: flex;
     justify-content: center;
 }
-.client{
+
+.companies{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    border-radius: 4px;
     margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     color:#AFB1B8;
 }
-.client:hover{
+.companies:hover,
+.companies:focus{
     color:#2196F3;
     border: 1px solid #2196F3;
     cursor: pointer;
@@ -352,12 +368,7 @@ margin-right: 30px;
 .client:nth-child(6){
     margin-right: 0;
 }
-.comp-group-1,
-.comp-group-2,
-.comp-object-3,
-.comp-group-4,
-.comp-group-5,
-.comp-group-6{
+.companies{
   fill:currentColor;
 }
 
@@ -424,13 +435,16 @@ margin-right: 30px;
     color:#FFFFFF
 }
 .action-item{
+    margin-right: 10px;
+}
+.social-link{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
+
     border-radius: 50% 50%;
     color:#FFFFFF;
     background-color: #FFFFFF1A;
@@ -438,7 +452,8 @@ margin-right: 30px;
 .action-item:nth-child(4){
     margin-right: 0;
 }
-.action-item:hover{
+.social-link:hover,
+.social-link:focus{
     background-color: #2196F3;
 }
 .action-insta,
@@ -453,6 +468,7 @@ margin-right: 30px;
 .button {
     display: inline-block;
     border-radius: 4px;
+    border: none;
     padding: 6px 22px;
     
     color: var(--primary-text-color);
